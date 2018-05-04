@@ -1,0 +1,393 @@
+Renesas Optimizing Linker (W2.08.00 )             04-May-2018 16:16:04
+
+*** Options ***
+
+-subcommand=DefaultBuild\ssd1306_spi_with_freertos.clnk
+-library=DefaultBuild\ssd1306_spi_with_freertos.lib
+-input=DefaultBuild\Config_PORT.obj
+-input=DefaultBuild\Config_PORT_user.obj
+-input=DefaultBuild\r_cg_hardware_setup.obj
+-input=DefaultBuild\r_smc_cgc.obj
+-input=DefaultBuild\r_smc_cgc_user.obj
+-input=DefaultBuild\r_smc_interrupt.obj
+-input=DefaultBuild\dbsct.obj
+-input=DefaultBuild\hwsetup.obj
+-input=DefaultBuild\lowlvl.obj
+-input=DefaultBuild\lowsrc.obj
+-input=DefaultBuild\resetprg.obj
+-input=DefaultBuild\sbrk.obj
+-input=DefaultBuild\vecttbl.obj
+-input=DefaultBuild\r_bsp_common.obj
+-input=DefaultBuild\cpu.obj
+-input=DefaultBuild\locking.obj
+-input=DefaultBuild\mcu_clocks.obj
+-input=DefaultBuild\mcu_init.obj
+-input=DefaultBuild\mcu_interrupts.obj
+-input=DefaultBuild\mcu_locks.obj
+-input=DefaultBuild\mcu_mapped_interrupts.obj
+-input=DefaultBuild\mcu_startup.obj
+-input=DefaultBuild\Pin.obj
+-input=DefaultBuild\heap_1.obj
+-input=DefaultBuild\port.obj
+-input=DefaultBuild\port_asm.obj
+-input=DefaultBuild\croutine.obj
+-input=DefaultBuild\event_groups.obj
+-input=DefaultBuild\list.obj
+-input=DefaultBuild\queue.obj
+-input=DefaultBuild\stream_buffer.obj
+-input=DefaultBuild\tasks.obj
+-input=DefaultBuild\timers.obj
+-input=DefaultBuild\ApplicationHook.obj
+-input=DefaultBuild\main.obj
+-input=DefaultBuild\test.obj
+-input=DefaultBuild\r_rspi_rx_pinset.obj
+-input=DefaultBuild\r_rspi_rx.obj
+-input=DefaultBuild\ssd1306_spi.obj
+-input=DefaultBuild\renderer2d_ssd1306.obj
+-input=DefaultBuild\draw_data.obj
+-noprelink
+-output=DefaultBuild\ssd1306_spi_with_freertos.abs
+-vect=_undefined_interrupt_source_isr
+-list=DefaultBuild\ssd1306_spi_with_freertos.map
+-show=total_size,vector
+-nooptimize
+-start=SU,SI,B_1,R_1,B_2,R_2,B,R/4,C_1,C_2,C,C$*,D*,W*,L,P*/FFE00000,EXCEPTVECT/FFFFFF80,RESETVECT/FFFFFFFC
+-rom=D=R,D_1=R_1,D_2=R_2
+-nologo
+-end
+
+*** Error information ***
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+SU
+                                  00000004  00001003      1000   4
+SI
+                                  00001004  00001403       400   4
+B_1
+                                  00001404  0000c82b      b428   1
+R_1
+                                  0000c82c  0000c88a        5f   1
+B_2
+                                  0000c88c  0000c893         8   2
+R_2
+                                  0000c894  0000c894         0   1
+B
+                                  0000c894  0000d987      10f4   4
+R
+                                  0000d988  0000daef       168   4
+$ADDR_C_FE7F5D00
+                                  fe7f5d00  fe7f5d0b         c   1
+$ADDR_C_FE7F5D10
+                                  fe7f5d10  fe7f5d13         4   1
+$ADDR_C_FE7F5D20
+                                  fe7f5d20  fe7f5d23         4   1
+$ADDR_C_FE7F5D40
+                                  fe7f5d40  fe7f5d43         4   1
+$ADDR_C_FE7F5D48
+                                  fe7f5d48  fe7f5d4b         4   1
+$ADDR_C_FE7F5D50
+                                  fe7f5d50  fe7f5d5f        10   1
+$ADDR_C_FE7F5D64
+                                  fe7f5d64  fe7f5d67         4   1
+$ADDR_C_FE7F5D70
+                                  fe7f5d70  fe7f5d73         4   1
+C_1
+                                  ffe00000  ffe006bb       6bc   1
+C_2
+                                  ffe006bc  ffe006c1         6   2
+C
+                                  ffe006c4  ffe0073f        7c   4
+C$DSEC
+                                  ffe00740  ffe00763        24   4
+C$BSEC
+                                  ffe00764  ffe0077b        18   4
+C$VECT
+                                  ffe0077c  ffe00b7b       400   4
+D
+                                  ffe00b7c  ffe00ce3       168   4
+D_1
+                                  ffe00ce4  ffe00d42        5f   1
+D_2
+                                  ffe00d43  ffe00d43         0   1
+W
+                                  ffe00d43  ffe00d43         0   1
+W_1
+                                  ffe00d43  ffe00d43         0   1
+W_2
+                                  ffe00d43  ffe00d43         0   1
+L
+                                  ffe00d44  ffe00dbb        78   4
+P
+                                  ffe00dbc  ffe08ca1      7ee6   1
+EXCEPTVECT
+                                  ffffff80  fffffffb        7c   4
+RESETVECT
+                                  fffffffc  ffffffff         4   4
+
+*** Total Section Size ***
+
+RAMDATA SECTION:  0000daeb Byte(s)
+ROMDATA SECTION:  00000e6d Byte(s)
+PROGRAM SECTION:  00007ee6 Byte(s)
+
+*** Variable Vector Table List ***
+
+NO.    SYMBOL/ADDRESS
+  0    _undefined_interrupt_source_isr
+  1    _undefined_interrupt_source_isr
+  2    _undefined_interrupt_source_isr
+  3    _undefined_interrupt_source_isr
+  4    _undefined_interrupt_source_isr
+  5    _undefined_interrupt_source_isr
+  6    _undefined_interrupt_source_isr
+  7    _undefined_interrupt_source_isr
+  8    _undefined_interrupt_source_isr
+  9    _undefined_interrupt_source_isr
+ 10    _undefined_interrupt_source_isr
+ 11    _undefined_interrupt_source_isr
+ 12    _undefined_interrupt_source_isr
+ 13    _undefined_interrupt_source_isr
+ 14    _undefined_interrupt_source_isr
+ 15    _undefined_interrupt_source_isr
+ 16    _bus_error_isr
+ 17    _undefined_interrupt_source_isr
+ 18    _undefined_interrupt_source_isr
+ 19    _undefined_interrupt_source_isr
+ 20    _undefined_interrupt_source_isr
+ 21    _undefined_interrupt_source_isr
+ 22    _undefined_interrupt_source_isr
+ 23    _undefined_interrupt_source_isr
+ 24    _undefined_interrupt_source_isr
+ 25    _undefined_interrupt_source_isr
+ 26    _undefined_interrupt_source_isr
+ 27    _vSoftwareInterruptEntry
+ 28    _vTickISR
+ 29    _undefined_interrupt_source_isr
+ 30    _undefined_interrupt_source_isr
+ 31    _undefined_interrupt_source_isr
+ 32    _undefined_interrupt_source_isr
+ 33    _undefined_interrupt_source_isr
+ 34    _undefined_interrupt_source_isr
+ 35    _undefined_interrupt_source_isr
+ 36    _undefined_interrupt_source_isr
+ 37    _undefined_interrupt_source_isr
+ 38    _rspi_spri0_isr
+ 39    _rspi_spti0_isr
+ 40    _undefined_interrupt_source_isr
+ 41    _undefined_interrupt_source_isr
+ 42    _undefined_interrupt_source_isr
+ 43    _undefined_interrupt_source_isr
+ 44    _undefined_interrupt_source_isr
+ 45    _undefined_interrupt_source_isr
+ 46    _undefined_interrupt_source_isr
+ 47    _undefined_interrupt_source_isr
+ 48    _undefined_interrupt_source_isr
+ 49    _undefined_interrupt_source_isr
+ 50    _undefined_interrupt_source_isr
+ 51    _undefined_interrupt_source_isr
+ 52    _undefined_interrupt_source_isr
+ 53    _undefined_interrupt_source_isr
+ 54    _undefined_interrupt_source_isr
+ 55    _undefined_interrupt_source_isr
+ 56    _undefined_interrupt_source_isr
+ 57    _undefined_interrupt_source_isr
+ 58    _undefined_interrupt_source_isr
+ 59    _undefined_interrupt_source_isr
+ 60    _undefined_interrupt_source_isr
+ 61    _undefined_interrupt_source_isr
+ 62    _undefined_interrupt_source_isr
+ 63    _undefined_interrupt_source_isr
+ 64    _undefined_interrupt_source_isr
+ 65    _undefined_interrupt_source_isr
+ 66    _undefined_interrupt_source_isr
+ 67    _undefined_interrupt_source_isr
+ 68    _undefined_interrupt_source_isr
+ 69    _undefined_interrupt_source_isr
+ 70    _undefined_interrupt_source_isr
+ 71    _undefined_interrupt_source_isr
+ 72    _undefined_interrupt_source_isr
+ 73    _undefined_interrupt_source_isr
+ 74    _undefined_interrupt_source_isr
+ 75    _undefined_interrupt_source_isr
+ 76    _undefined_interrupt_source_isr
+ 77    _undefined_interrupt_source_isr
+ 78    _undefined_interrupt_source_isr
+ 79    _undefined_interrupt_source_isr
+ 80    _undefined_interrupt_source_isr
+ 81    _undefined_interrupt_source_isr
+ 82    _undefined_interrupt_source_isr
+ 83    _undefined_interrupt_source_isr
+ 84    _undefined_interrupt_source_isr
+ 85    _undefined_interrupt_source_isr
+ 86    _undefined_interrupt_source_isr
+ 87    _undefined_interrupt_source_isr
+ 88    _undefined_interrupt_source_isr
+ 89    _undefined_interrupt_source_isr
+ 90    _undefined_interrupt_source_isr
+ 91    _undefined_interrupt_source_isr
+ 92    _undefined_interrupt_source_isr
+ 93    _undefined_interrupt_source_isr
+ 94    _undefined_interrupt_source_isr
+ 95    _undefined_interrupt_source_isr
+ 96    _undefined_interrupt_source_isr
+ 97    _undefined_interrupt_source_isr
+ 98    _undefined_interrupt_source_isr
+ 99    _undefined_interrupt_source_isr
+100    _undefined_interrupt_source_isr
+101    _undefined_interrupt_source_isr
+102    _undefined_interrupt_source_isr
+103    _undefined_interrupt_source_isr
+104    _undefined_interrupt_source_isr
+105    _undefined_interrupt_source_isr
+106    _undefined_interrupt_source_isr
+107    _group_bl2_handler_isr
+108    _undefined_interrupt_source_isr
+109    _undefined_interrupt_source_isr
+110    _group_bl0_handler_isr
+111    _group_bl1_handler_isr
+112    _group_al0_handler_isr
+113    _group_al1_handler_isr
+114    _undefined_interrupt_source_isr
+115    _undefined_interrupt_source_isr
+116    _undefined_interrupt_source_isr
+117    _undefined_interrupt_source_isr
+118    _undefined_interrupt_source_isr
+119    _undefined_interrupt_source_isr
+120    _undefined_interrupt_source_isr
+121    _undefined_interrupt_source_isr
+122    _undefined_interrupt_source_isr
+123    _undefined_interrupt_source_isr
+124    _undefined_interrupt_source_isr
+125    _undefined_interrupt_source_isr
+126    _undefined_interrupt_source_isr
+127    _undefined_interrupt_source_isr
+128    _undefined_interrupt_source_isr
+129    _undefined_interrupt_source_isr
+130    _undefined_interrupt_source_isr
+131    _undefined_interrupt_source_isr
+132    _undefined_interrupt_source_isr
+133    _undefined_interrupt_source_isr
+134    _undefined_interrupt_source_isr
+135    _undefined_interrupt_source_isr
+136    _undefined_interrupt_source_isr
+137    _undefined_interrupt_source_isr
+138    _undefined_interrupt_source_isr
+139    _undefined_interrupt_source_isr
+140    _undefined_interrupt_source_isr
+141    _undefined_interrupt_source_isr
+142    _undefined_interrupt_source_isr
+143    _undefined_interrupt_source_isr
+144    _undefined_interrupt_source_isr
+145    _undefined_interrupt_source_isr
+146    _undefined_interrupt_source_isr
+147    _undefined_interrupt_source_isr
+148    _undefined_interrupt_source_isr
+149    _undefined_interrupt_source_isr
+150    _undefined_interrupt_source_isr
+151    _undefined_interrupt_source_isr
+152    _undefined_interrupt_source_isr
+153    _undefined_interrupt_source_isr
+154    _undefined_interrupt_source_isr
+155    _undefined_interrupt_source_isr
+156    _undefined_interrupt_source_isr
+157    _undefined_interrupt_source_isr
+158    _undefined_interrupt_source_isr
+159    _undefined_interrupt_source_isr
+160    _undefined_interrupt_source_isr
+161    _undefined_interrupt_source_isr
+162    _undefined_interrupt_source_isr
+163    _undefined_interrupt_source_isr
+164    _undefined_interrupt_source_isr
+165    _undefined_interrupt_source_isr
+166    _undefined_interrupt_source_isr
+167    _undefined_interrupt_source_isr
+168    _undefined_interrupt_source_isr
+169    _undefined_interrupt_source_isr
+170    _undefined_interrupt_source_isr
+171    _undefined_interrupt_source_isr
+172    _undefined_interrupt_source_isr
+173    _undefined_interrupt_source_isr
+174    _undefined_interrupt_source_isr
+175    _undefined_interrupt_source_isr
+176    _undefined_interrupt_source_isr
+177    _undefined_interrupt_source_isr
+178    _undefined_interrupt_source_isr
+179    _undefined_interrupt_source_isr
+180    _undefined_interrupt_source_isr
+181    _undefined_interrupt_source_isr
+182    _undefined_interrupt_source_isr
+183    _undefined_interrupt_source_isr
+184    _undefined_interrupt_source_isr
+185    _undefined_interrupt_source_isr
+186    _undefined_interrupt_source_isr
+187    _undefined_interrupt_source_isr
+188    _undefined_interrupt_source_isr
+189    _undefined_interrupt_source_isr
+190    _undefined_interrupt_source_isr
+191    _undefined_interrupt_source_isr
+192    _undefined_interrupt_source_isr
+193    _undefined_interrupt_source_isr
+194    _undefined_interrupt_source_isr
+195    _undefined_interrupt_source_isr
+196    _undefined_interrupt_source_isr
+197    _undefined_interrupt_source_isr
+198    _undefined_interrupt_source_isr
+199    _undefined_interrupt_source_isr
+200    _undefined_interrupt_source_isr
+201    _undefined_interrupt_source_isr
+202    _undefined_interrupt_source_isr
+203    _undefined_interrupt_source_isr
+204    _undefined_interrupt_source_isr
+205    _undefined_interrupt_source_isr
+206    _undefined_interrupt_source_isr
+207    _undefined_interrupt_source_isr
+208    _undefined_interrupt_source_isr
+209    _undefined_interrupt_source_isr
+210    _undefined_interrupt_source_isr
+211    _undefined_interrupt_source_isr
+212    _undefined_interrupt_source_isr
+213    _undefined_interrupt_source_isr
+214    _undefined_interrupt_source_isr
+215    _undefined_interrupt_source_isr
+216    _undefined_interrupt_source_isr
+217    _undefined_interrupt_source_isr
+218    _undefined_interrupt_source_isr
+219    _undefined_interrupt_source_isr
+220    _undefined_interrupt_source_isr
+221    _undefined_interrupt_source_isr
+222    _undefined_interrupt_source_isr
+223    _undefined_interrupt_source_isr
+224    _undefined_interrupt_source_isr
+225    _undefined_interrupt_source_isr
+226    _undefined_interrupt_source_isr
+227    _undefined_interrupt_source_isr
+228    _undefined_interrupt_source_isr
+229    _undefined_interrupt_source_isr
+230    _undefined_interrupt_source_isr
+231    _undefined_interrupt_source_isr
+232    _undefined_interrupt_source_isr
+233    _undefined_interrupt_source_isr
+234    _undefined_interrupt_source_isr
+235    _undefined_interrupt_source_isr
+236    _undefined_interrupt_source_isr
+237    _undefined_interrupt_source_isr
+238    _undefined_interrupt_source_isr
+239    _undefined_interrupt_source_isr
+240    _undefined_interrupt_source_isr
+241    _undefined_interrupt_source_isr
+242    _undefined_interrupt_source_isr
+243    _undefined_interrupt_source_isr
+244    _undefined_interrupt_source_isr
+245    _undefined_interrupt_source_isr
+246    _undefined_interrupt_source_isr
+247    _undefined_interrupt_source_isr
+248    _undefined_interrupt_source_isr
+249    _undefined_interrupt_source_isr
+250    _undefined_interrupt_source_isr
+251    _undefined_interrupt_source_isr
+252    _undefined_interrupt_source_isr
+253    _undefined_interrupt_source_isr
+254    _undefined_interrupt_source_isr
+255    _undefined_interrupt_source_isr

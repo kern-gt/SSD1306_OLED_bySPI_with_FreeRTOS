@@ -1,0 +1,48 @@
+//                                  =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+//                                   Thanks for using ZEROPLUS Logic Analyzer
+//                                                           Version:V3.14.00
+//                                  =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+//ファイル名称： Packet.txt
+//ファイルサイズ：2 KB
+
+----------------------------------------------------------------------------------------------------------------------------------
+//ファイル作成日：  2018/05/02
+// Sampling mode:Standard
+// Internal sampling frequency = 10000000 Hz
+//メモリ容量：:16KB
+//トリガ位置： = 20%
+//トリガレベル：Port A = 1.50V      Port B = 1.50V      
+//トリガ回数：1 
+//トリガページ数：1 
+//データの長さ：1.6384ms	
+//出力範囲：1.6384ms
+--------------------------------------------------------------
+//チャネル名称：      A0 A1 A2 A3 A4 A5 A6 A7      B0 B1 B2 B3 B4 B5 B6 B7      C0 C1 C2 C3 C4 C5 C6 C7      D0 D1 D2 D3 D4 D5 D6 D7      
+//信号フィルタ条件：  X  X  X  X  X  X  X  X       X  X  X  X  X  X  X  X       X  X  X  X  X  X  X  X       X  X  X  X  X  X  X  X       
+取り込みデータの表示
+------------------------------------------------------------------------------------------------
+ヘキサデシマル
+
+
+パケット＃  名称      開始点      Data      Data      Data      Data      
+1           Bus1(SPI) 0ns         AE        A8        3F        D3        
+
+パケット＃  名称      開始点      Data      Data      Data      Data      
+2           Bus1(SPI) 34.2us      00        40        A0        C0        
+
+パケット＃  名称      開始点      Data      Data      Data      Data      
+3           Bus1(SPI) 68.3us      DA        12        81        FF        
+
+パケット＃  名称      開始点      Data      Data      Data      Data      
+4           Bus1(SPI) 102.5us     A4        A6        D5        80        
+
+パケット＃  名称      開始点      Data      Data      Data      Data      
+5           Bus1(SPI) 136.7us     2E        20        10        21        
+
+パケット＃  名称      開始点      Data      Data      Data      Data      
+6           Bus1(SPI) 170.9us     00        7F        22        00        
+
+パケット＃  名称      開始点      Data      Data      Data      Data      
+7           Bus1(SPI) 205.1us     07        8D        14        AF        
+
